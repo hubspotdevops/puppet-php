@@ -50,7 +50,7 @@ class php::fpm::daemon (
       content => template('php/fpm/php-fpm.conf.erb'),
       owner   => 'root',
       group   => 'root',
-      mode    => 0644,
+      mode    => '0644',
       require => Package[$fpm_package_name],
     }
 
